@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Arabic";
+    src: url("../fonts/arabic.otf") format("truetype");
+  }
+
+html {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffc4004d;
+    background-image: url('../images/bg-01.png');
+}
+
+.chapter__content-box {
+    width: 55vw;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgb(133, 133, 133);
+    padding-bottom: 3rem;
+}
+
+.surah-header {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bismillah-img {
+    width: 10vw;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem 0 1.5rem 0;
+    border-bottom: 1px solid black;
+}
+
+.aya-box {
+    width: 55vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.wtw-box {
+    display: flex;
+    float: right;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1.5rem;
+}
+
+.aya__translation-box {
+    border-bottom: 1px solid black;
+    padding: 0 1.5rem 0.5rem 1.5rem;
+}
+
+.arabic__word-box, .arabic__transliteration-box, .english__word-box {
+    display: block;
+}
+
+.arabic__word-box {
+    font-size: 3rem;
+    font-family: 'Arabic', serif;
+    display: flex;
+    justify-content: center;
+}
+
+.arabic__transliteration-box {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: rgb(105, 105, 105);
+}
+
+.english__word-box {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+.full-transliteration-box, .full-translation-box {
+    font-size: 1.2rem;
+    padding: 0 0 0.5rem 0;
+}
+
+.full-transliteration-box {
+    color: rgb(105, 105, 105);
+}
+
+footer {
+    background-color: #ffc400;
+    background-image: url('../images/bg-01.png');
+    border-top: 2px solid black;
+    box-shadow: 3px 3px 3px 3px rgb(133, 133, 133);
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.footer__content-box {
+    width: 55vw;
+    padding: 0 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.footer__content-box a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.audio_button {
+   display: flex;
+   align-items: center;
+}
+
+#pausefatiha {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .chapter__content-box {
+        width: 90vw;
+    }
+    
+    .bismillah-img {
+        width: 40vw;
+    }
+    
+    .aya-box {
+        width: 90vw;
+    }
+     
+    .arabic__word-box {
+        font-size: 2.5rem;
+    }
+    
+    .arabic__transliteration-box {
+        font-size: 0.8rem;
+    }
+    
+    .english__word-box {
+        font-size: 0.8rem;
+    }
+    
+    .full-transliteration-box, .full-translation-box {
+        font-size: 1rem;
+        padding: 0 0 0.5rem 0;
+    }
+    
+    .full-transliteration-box {
+        padding-top: 0.5rem;
+    }
+    
+    .footer__content-box {
+        width: 90vw;
+        padding: 0 ;
+        height: 2.5rem;
+    }
+    
+    .footer__content-box a {
+        font-size: 0.9rem;
+    }
+
+}
+
+
